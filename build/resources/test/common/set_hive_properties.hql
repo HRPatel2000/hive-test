@@ -1,0 +1,17 @@
+SET hive.exec.dynamic.partition=true;
+SET hive.exec.dynamic.partition.mode=nonstrict;
+SET hive.merge.mapredfiles=true;
+SET hive.merge.mapfiles=true;
+SET hive.auto.convert.join=true;
+SET hive.exec.drop.ignorenonexistent=true;
+SET hive.exec.compress.output=true;
+SET dfs.block.size=268435456;
+SET parquet.block.size=268435456;
+SET mapred.min.split.size=134217728;
+SET mapred.max.split.size=268435456;
+SET mapreduce.map.memory.mb=5120;
+SET mapreduce.reduce.memory.mb=5120;
+SET mapreduce.map.java.opts=-Xmx4096m;
+SET mapreduce.reduce.java.opts=-Xmx4096m;
+SET hive.support.concurrency=false;
+SET hive.mapred.mode=nonstrict;

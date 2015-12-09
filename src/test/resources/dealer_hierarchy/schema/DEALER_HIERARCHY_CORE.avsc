@@ -1,0 +1,100 @@
+{
+  "type" : "record",
+  "name" : "DEALER_HIERARCHY_CORE",
+  "doc" : "Sqoop import of DEALER_HIERARCHY",
+  "fields" : [ {
+    "name" : "File_Name",
+    "type" : [ "string", "null" ],
+    "columnName" : "File_Name"
+  },{
+    "name" : "GEN_ID",
+    "type" : [ "string", "null" ],
+    "columnName" : "GEN_ID"
+  }, {
+    "name" : "DMS_SYSTEM",
+    "type" : [ "string", "null" ],
+    "columnName" : "DMS_SYSTEM"
+  }, {
+    "name" : "DMS_VERSION",
+    "type" : [ "string", "null" ],
+    "columnName" : "DMS_VERSION"
+  }, {
+    "name" : "TRANSMIT_TS",
+    "type" : [ "string", "null" ],
+    "columnName" : "TRANSMIT_TS"
+  },{
+    "name" : "ORIG_TRANSMIT_TS",
+    "type" : [ "string", "null" ],
+    "columnName" : "TRANSMIT_TS"
+  }, {
+    "name" : "TRANSMIT_BY",
+    "type" : [ "string", "null" ],
+    "columnName" : "TRANSMIT_BY"
+  }, {
+    "name" : "RECORD_STATUS",
+    "type" : [ "string", "null" ],
+    "columnName" : "RECORD_STATUS"
+  }, {
+    "name" : "DEALER_UPDT_IND",
+    "type" : [ "string", "null" ],
+    "columnName" : "DEALER_UPDT_IND",
+    "sqlType" : "1"
+  }, {
+    "name" : "STORE_NUMBER",
+    "type" : [ "string", "null" ],
+    "columnName" : "STORE_NUMBER"
+  }, {
+    "name" : "PART_TYPE",
+    "type" : [ "string", "null" ],
+    "columnName" : "PART_TYPE"
+  }, {
+    "name" : "STORE_NAME",
+    "type" : [ "string", "null" ],
+    "columnName" : "STORE_NAME"
+  }, {
+    "name" : "INVENTORY_STORE_NUMBER",
+    "type" : [ "string", "null" ],
+    "columnName" : "INVENTORY_STORE_NUMBER"
+  }, {
+    "name" : "CAT_EMRG_DEALER_CODE",
+    "type" : [ "string", "null" ],
+    "columnName" : "CAT_EMRG_DEALER_CODE"
+  }, {
+    "name" : "CAT_STOCK_DEALER_CODE",
+    "type" : [ "string", "null" ],
+    "columnName" : "CAT_STOCK_DEALER_CODE"
+  }, {
+    "name" : "STOCK_REPLEN_STORE_NUMBER",
+    "type" : [ "string", "null" ],
+    "columnName" : "STOCK_REPLEN_STORE_NUMBER"
+  }, {
+    "name" : "STOCK_REPLEN_LEAD_TIME",
+    "type" : [ "string", "null" ],
+    "columnName" : "STOCK_REPLEN_LEAD_TIME"
+  }, {
+    "name" : "LST_UPDT_TS",
+    "type" : [ "string", "null" ],
+    "columnName" : "LST_UPDT_TS"
+  }, {
+    "name" : "ORIG_LST_UPDT_TS",
+    "type" : [ "string", "null" ],
+    "columnName" : "ORIG_LST_UPDT_TS"
+  }, {
+    "name" : "LST_UPDT_BY_ID",
+    "type" : [ "string", "null" ],
+    "columnName" : "LST_UPDT_BY_ID"
+  }, {
+    "name" : "FILE_INS_TS",
+    "type" : [ "string", "null" ],
+    "columnName" : "FILE_INS_TS"
+  }, {
+    "name" : "ORIG_FILE_INS_TS",
+    "type" : [ "string", "null" ],
+    "columnName" : "ORIG_FILE_INS_TS"
+  }, {
+    "name" : "EXP_STOCK_PLAN_LEAD_TIME",
+    "type" : [ "string", "null" ],
+    "columnName" : "EXP_STOCK_PLAN_LEAD_TIME"
+  } ],
+  "tableName" : "DEALER_HIERARCHY_CORE"
+}

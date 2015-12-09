@@ -1,0 +1,56 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+
+group = 'com.cat.ddsw.hivetest'
+version = '0.1.0-SNAPSHOT'
+
+// Add Provided Dependency Support
+configurations { providedCompile }
+sourceSets.main.compileClasspath += configurations.providedCompile
+sourceSets.test.compileClasspath += configurations.providedCompile
+sourceSets.test.runtimeClasspath += configurations.providedCompile
+
+scmVersion {
+    tag {
+        prefix = 'ddsw'
+    }
+    versionCreator 'versionWithBranch'
+}
+
+repositories {
+
+    //This Repos should be always used. But they can be commented to use the External repos if "Nexus is down" or "want to perform testing outside of VPN".
+    maven { url repos.nexus }
+    maven { url repos.nexus_cloudera }
+    maven { url repos.nexus_thirdparty }
+    maven { url repos.nexus_conjars }
+    maven { url repos.nexus_central }
+//    maven { url "http://repo.maven.apache.org/maven2" }
+
+    //If Nexus Goes Down, Uncomment these lines. Be sure to enable Proxy Settings as well. May create a switch for this.
+    //maven { url repos.cloudera }
+    //maven { url repos.conjars }
+    //maven { url repos.mvncentral }
+    //mavenCentral()
+}
+
+dependencies {
+    compile([
+            libs.junit,
+            libs.hiveRunner
+    ])
+
+    providedCompile([
+    ])
+
+    testCompile([
+            project(':custom-cat-udfs'),
+            libs.hadoopClient,
+            libs.hsqldb,
+            libs.hiveService,
+            libs.hiveExec,
+            libs.hadoopCore,
+            libs.reflections,
+            libs.mockitoCore
+    ])
+}
